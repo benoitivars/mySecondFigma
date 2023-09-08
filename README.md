@@ -133,7 +133,7 @@ Je vais attaquer le contenu de la carte blanche.
 Je dois :
 
 * Télécharger les deux logos et les mettre dans le bon dossier
-* Créer cinq <img>, en deux .classes différentes :
+* Créer cinq img, en deux .classes différentes :
     * .true
         * en CSS, utiliser les attributs suivants :  
         
@@ -150,7 +150,7 @@ Je dois :
                 height: 20px;
             }
 
-* Créer huit <p>, en quatre .classes différentes :
+* Créer huit p, en quatre .classes différentes :
     * .basic
         *en CSS, utiliser les attributs suivants :
             color: #292929;
@@ -186,11 +186,17 @@ Je dois :
                 font-style: normal;
                 font-weight: 400;
                 line-height: 36px; /* 100% */
-* Créer la ligne et la mettre entre le dernier <p> .feature et .free
+* Créer la ligne et la mettre entre le dernier p .feature et .free
     *en CSS, faire 188*1/0/0/0
     width: 188px;
     height: 1px;
     background-color: #000;
+
+^^^^ Ceci était globalement ma réflexion pour écrire ma .whitecard, identifier le nombre p, images, div nécessaires, déterminer le nombre et types de classes pour les répartir, l'ordre dans lequel mettre tout ça. Je pense qu'en me posant et "planifiant" mon code d'avance, j'ai été plus efficace qu'en codant à "essayons voir".
+
+**Je pense adopter pour la suite la méthode suivante; travailler en "zoom": partir du large avant de faire le spécifique. ici, j'ai d'abord fait le fond, la .whitecard, son contenu, puis le .yellowbuton et son contenu, les éléments de "chaque niveau" étant travaillés les uns à la suite des autres.**
+
+La galère est venue quand j'ai voulu display:flex; cet ensemble d'éléments isolés les uns par rapport aux autres. Comment ça a été résolu (et grâce à l'aide de qui) ? RDV dans la section feedback perso !
 
 
 ## Feedback perso
@@ -198,9 +204,9 @@ Je dois :
 Jusqu'à mettre tous les éléments, c'était nickel ! Cependant, je me suis vautré dans la manière d'arranger mes éléments :
 
 * Je serais parti pour des heures de prise de tête en display flex avec des éléments en roue libre
-* Selon Hugo, j'aurais dû partir sur des listes, où j'aurais modifié les dots et ce qui va en face
+* Selon **Hugo**, j'aurais dû partir sur des listes, où j'aurais modifié les dots et ce qui va en face
 * Voyant l'expression de désespoir et de profonde tristesse se peindre sur mon visage, il m'a dit qu'avec des <div .bloc>, en vrai, ça peut le faire.
-    * Et Caroline m'a confirmé que ça le fait !
+    * Et **Elodie** m'a confirmé que ça le fait !
     * --> Dans tous les cas, **TOUJOURS ASSOCIER D'UNE MANIERE OU D'UNE AUTRE LES ELEMENTS ALLANT ENSEMBLE**, que ce soit avec des listes, des div, ...
 
     14h44:  * j'ai compris des trucs ! .feature ne doivent pes être centrées, mais on joue avec les margin right et left, sans oublier de tripoter le gap !
@@ -208,7 +214,7 @@ Jusqu'à mettre tous les éléments, c'était nickel ! Cependant, je me suis vau
 
     EUREKA !!!!!! Pour avoir .whitecard et .yellowcard l'un en dessous de l'autre, il faut qu'ils,soient dans une p... de colonne !
 
-    Astuce :    position: relative/absolute; permet de bouger des éléments les uns par rappoort aux autres !
+    Astuce :    **Loukas** m'a montré les position: relative/absolute; permet de bouger des éléments les uns par rappoort aux autres !
                 et pour aller plus loin, dès qu'un élément est en "relative", on peut le bouger avec top/right/bottom/left: ;
 
                 J'ai bien tenté de bosser en utilisant par curiosité des margin-x:y; pour pisitionner .whitecard et .yellowbuton, mais c'est la foire aux déformations...
