@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 150px 0px 149px 0px;
+    background-color: #2D4480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whitecard {
+    width: 288px;
+    height: 469px;
+    border-radius: 27px;
+    background: #FFFF;
+    box-shadow: 5px 20px 50px 0px rgba(0, 0, 0, 0.60);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Ajoutez plus d'espace vertical entre les éléments */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 0px 69px 0px;
+    position: absolute;
+    /*margin-top: 150px;
+    margin-bottom: 149px;*/
+}
+
+.bloc {
+    display: flex; /* Utilisez flex pour aligner les éléments enfants (img et p) */
+    justify-content: space-between; /* Espace les éléments horizontalement */
+    align-items: center; /* Centre les éléments enfants verticalement */
+    gap: 23px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.true, .false {
+    width: 20px;
+    height: 20px;
+}
+
+
+.basic {
+    color: #292929;
+    font-family: Noto Sans Symbols;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px; /* 100% */
+}
+
+.feature {
+    color: #000;
+    font-family: Noto Sans Symbols;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
+
+.free {
+    color: #292929;
+    font-family: Noto Sans Symbols;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 100% */
+    letter-spacing: 4.68px;
+}
+
+.line1 {
+    width: 188px;
+    height: 1px;
+    background-color: #000;
+}
+
+.forever {
+    color: #2D4480;
+    font-family: Allan;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 100% */
+    margin-left: auto;
+    margin-right: 62px;
+    display: flex;
+    justify-content: center;
+}
+
+.yellowbuton {
+    width: 181px;
+    height: 68px;
+    flex-shrink: 0px;
+    border-radius: 34px;
+    background: #FFBC0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -230px;
+    /*margin-top: 585px;
+    margin-bottom: 149px;*/
+}
+
+.getstarted {
+    color: #253868;
+    text-align: center;
+    font-family: Noto Sans Symbols;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
