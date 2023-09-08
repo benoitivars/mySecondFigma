@@ -14,7 +14,7 @@ display: flex;
 
 #### Flex horizontal ⇄
 
-**justify-content:**
+*justify-content:*
 
 ##### Variables possibles
 
@@ -26,7 +26,7 @@ space-around    Les éléments s'affichent avec un espacement égal à l'entour 
 
 #### Flex vertical ⇅
 
-**align-items:**
+*align-items:*
 
 ##### Variables possibles
 
@@ -38,7 +38,7 @@ stretch        Les éléments sont étirés pour s'adapter au conteneur.
 
 #### Flex sens  ⇋
 
-**flex-direction:**
+*flex-direction:*
 
 /!\ Fonctionne selon le principe de l'axe de rotation !
 /!\/!\ Inversera la logique haut/bas gauche/droite ! En fait, la référence est le "point de vue des items" et pas celui de l'observateur ! Enfant du démon !
@@ -53,9 +53,9 @@ column-reverse     Les éléments sont disposés de bas en haut.
 
 #### Flex ordre  
 
-**.nom_de_classe {
+*.nom_de_classe {
     order: *int* ;
-}**
+}*
 
 Ici, on part tjs d'un objet d'une liste, et on utilise l'argument "order3" et on lui attribue la bonne valeur.
 
@@ -63,9 +63,9 @@ Ici, on part tjs d'un objet d'une liste, et on utilise l'argument "order3" et on
 
 #### Flex un seul élement   
 
-**.nome_de_classe {
+*.nome_de_classe {
     align_self:  ;
-}**
+}*
 
 Ici, on part tjs d'un objet d'une liste, et on utilise l'argument "order3" et on lui attribue la bonne valeur.
 
@@ -81,7 +81,7 @@ stretch        Les éléments sont étirés pour s'adapter au conteneur.
 
 #### Flex wrap   
 
-**flex-wrap:** 
+*flex-wrap:*
 
 Ici, on part tjs d'un objet d'une liste, et on utilise l'argument "order3" et on lui attribue la bonne valeur.
 
@@ -95,9 +95,9 @@ wrap-reverse     Les éléments s'enveloppent sur plusieurs lignes dans l'ordre 
 
 #### Flex-flow   
 
-**flex-flow:** 
+*flex-flow:*
 
-Fait du **flex-direction** et du **flex-wrap** en même temps, et prend les variables des deux !
+Fait du *flex-direction* et du *flex-wrap* en même temps, et prend les variables des deux !
 
 ##### Variables possibles
 
@@ -111,7 +111,7 @@ wrap-reverse       Les éléments s'enveloppent sur plusieurs lignes dans l'ordr
 
 #### Align-content
 
-**align-content:** 
+*align-content:* 
 
 Va gérer l'espace entre les lignes, sans bouger d'éléments.
 
@@ -219,4 +219,4 @@ Jusqu'à mettre tous les éléments, c'était nickel ! Cependant, je me suis vau
 
                 J'ai bien tenté de bosser en utilisant par curiosité des margin-x:y; pour pisitionner .whitecard et .yellowbuton, mais c'est la foire aux déformations...
 
-Enfin, ultime correction, j'ai changéé le nom des features.
+Enfin, ultime correction, j'ai changé le nom des features.
